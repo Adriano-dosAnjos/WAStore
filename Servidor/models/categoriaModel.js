@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const categoriaSchema = new mongoose.Schema({
     codigo: {type: Number, required: [true, 'Informação obrigatória']},
+    //codigo: Number,
     nome: {type: String, required: [true, 'Informação obrigatória']},
-    //codigo: String,
     //nome: String,
     desc: String
 });

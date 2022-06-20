@@ -6,9 +6,10 @@ const produtoSchema = new mongoose.Schema({
     nome: String,
     desc: String,
     cor: String,
-    valor: Number,
+    valor: String,
     foto: String,
-    categoriaId: {type: mongoose.Schema.Types.ObjectId, ref: 'categoria'},
+    categoria: {type: mongoose.Schema.Types.ObjectId, ref: 'categoria'},
+    //categoria: String,
     quantidade: Number,
 });
 
